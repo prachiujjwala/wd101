@@ -12,8 +12,8 @@ document
     const dobValue = new Date(dobInput.value);
     const today = new Date();
     const acceptedTerms = document.getElementById("acceptedTerms").checked
-      ? "Yes"
-      : "No";
+      ? "true"
+      : "false";
 
     const age = today.getFullYear() - dobValue.getFullYear();
     const monthDifference = today.getMonth() - dobValue.getMonth();
